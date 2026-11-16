@@ -12,6 +12,6 @@ Earlier gameplay checks confirmed that the activation message appears once, stay
 | Core update during an active quest and after completion | Progress, rewards, completion and replay behavior remain correct across reload. |
 | Remove and reinstall one pack | Record the effect on saves made before startup, during play and after completion. Document the observed restrictions. |
 | Final PC candidate through the local mod.io path | Repeat startup and dependent-pack checks with optional PC plugins and development helpers disabled. |
-| mod.io and console | Supply original listing art, submit the source ZIP, check the cloud cook and approved package, then test on PS5 alone and with a dependent pack. |
+| mod.io and console | Use the [listing worksheet](modio-listing.json) and [original gameplay cover](modio-cover.png), submit the source ZIP, check the cloud cook and approved package, then test on PS5 alone and with a dependent pack. |
 
 Record the game version, package hashes, install order, save, location and observed outcome for each run. Keep the local-test ZIP and source submission separate.
