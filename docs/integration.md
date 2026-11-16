@@ -64,7 +64,7 @@ This is a compiler integration fragment; `build` is your generated `Build`. For 
 
 ### Run a complete example
 
-[examples/slot.rs](../examples/slot.rs) loads Quest Builder's authored `examples/native-workspots` quest, scene and world specifications, compiles all resources, attaches a slot and produces a verified local-test package:
+[examples/slot.rs](../examples/slot.rs) loads the quest, scene and world specifications bundled in [examples/native-workspots](../examples/native-workspots), compiles all resources, attaches a slot and produces a verified local-test package. These inputs come from Quest Builder's native-workspots example; no separate checkout is required:
 
 ```sh
 cargo run --release --locked --example slot -- --game "/path/to/Cyberpunk 2077" --slot 2 --out builds/world-activity

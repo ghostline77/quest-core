@@ -1,0 +1,35 @@
+{
+  "name": "world_activity",
+  "archive_path": "mod\\world_activity\\activity.scene",
+  "speaker_distance_interruptions": false,
+  "actors": [{
+    "key":"contact", "kind":"spawner",
+    "spawner_ref":"$/03_night_city/#world_activity/#npc",
+    "lipsync":false, "appearance":"citizen__homeless_ma_homeless_ma_17"
+  }],
+  "entry_point": {"name":"start","node":"begin"},
+  "exit_points": [{"name":"end","node":"finished"}],
+  "start_node": {"key":"begin","on_start":[{"node":"work"}]},
+  "quest_nodes": [
+    {
+      "key":"work", "kind":"use_workspot",
+      "entity_ref":"$/03_night_city/#world_activity/#npc",
+      "workspot_ref":"$/03_night_city/#world_activity/#standing_spot",
+      "instant":true, "finish_animation":false, "enable_idle_mode":true,
+      "on_work_started":[{"node":"leave"}]
+    },
+    {
+      "key":"leave", "kind":"pause_condition",
+      "trigger_ref":"$/03_night_city/#world_activity/#leave",
+      "on_out":[{"node":"release"}]
+    },
+    {
+      "key":"release", "kind":"stop_workspot",
+      "entity_ref":"$/03_night_city/#world_activity/#npc",
+      "workspot_ref":"$/03_night_city/#world_activity/#standing_spot",
+      "finish_animation":false, "instant":true,
+      "on_success":[{"node":"finished"}]
+    }
+  ],
+  "end_node": {"key":"finished"}
+}

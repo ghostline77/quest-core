@@ -617,6 +617,7 @@ dependencies = [
 [[package]]
 name = "ghostline-quest-builder"
 version = "0.1.0"
+source = "git+https://github.com/ghostline77/quest-builder.git?rev=61515b8132b1919439acc9e2466414cb23398b5b#61515b8132b1919439acc9e2466414cb23398b5b"
 dependencies = [
  "anyhow",
  "axum",
@@ -650,6 +651,7 @@ dependencies = [
 [[package]]
 name = "ghostline-red"
 version = "0.1.0"
+source = "git+https://github.com/ghostline77/ghostline-red.git?rev=6a69b41516d56e8cbebb3eaee43d4317a163521e#6a69b41516d56e8cbebb3eaee43d4317a163521e"
 dependencies = [
  "aho-corasick",
  "anyhow",
@@ -1854,4 +1856,3 @@ dependencies = [
  "log",
  "simd-adler32",
 ]
-

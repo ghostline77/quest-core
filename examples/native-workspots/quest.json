@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "world_activity",
+  "title": "World activity",
+  "stages": [{
+    "id": "activity",
+    "type": "play_scene",
+    "phase_resource": "mod\\world_activity\\activity.questphase",
+    "scene": "mod\\world_activity\\activity.scene",
+    "origin": "$/03_night_city/#world_activity/#scene_origin",
+    "wait_trigger": "$/03_night_city/#world_activity/#approach",
+    "spawners": ["$/03_night_city/#world_activity/#npc"],
+    "despawn_after": true,
+    "completion_fact": "world_activity_completed"
+  }]
+}

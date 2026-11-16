@@ -7,8 +7,8 @@ description = "Shared native Cyberpunk 2077 quest bootstrap and slot registratio
 [dependencies]
 anyhow = "1"
 clap = { version = "4", features = ["derive"] }
-ghostline-quest-builder = { path = "../quest-builder" }
-ghostline-red = { path = "../ghostline-red" }
+ghostline-quest-builder = { git = "https://github.com/ghostline77/quest-builder.git", rev = "61515b8132b1919439acc9e2466414cb23398b5b", default-features = false }
+ghostline-red = { git = "https://github.com/ghostline77/ghostline-red.git", rev = "6a69b41516d56e8cbebb3eaee43d4317a163521e" }
 serde_json = "1"
 tempfile = "3"
 zip = { version = "2.4.2", default-features = false, features = ["deflate"] }

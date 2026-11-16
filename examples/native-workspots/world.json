@@ -1,0 +1,30 @@
+{
+  "name": "world_activity",
+  "prefab_root": "$/03_night_city/#world_activity",
+  "origin": [-2870.327293376668, -2719.007722764387, 20.475060958862],
+  "streaming_box": "world",
+  "always_loaded_sector_path": "mod\\world_activity\\world.streamingsector",
+  "block_path": "mod\\world_activity\\all.streamingblock",
+  "markers": [{
+    "ref": "#scene_origin", "sector": "always_loaded", "scene_marker": true,
+    "position": [-2870.327293376668, -2719.007722764387, 20.475060958862]
+  }],
+  "triggers": [
+    {"ref":"#approach", "sector":"always_loaded", "position":[-2870.327293376668,-2719.007722764387,17.475060958862], "outline":{"width":60,"depth":60,"height":20}},
+    {"ref":"#leave", "sector":"always_loaded", "position":[-2898,-2709,17.475060958862], "outline":{"width":8,"depth":8,"height":20}}
+  ],
+  "entities": [{
+    "ref": "#npc", "sector": "always_loaded",
+    "position": [-2864.327293376668,-2719.007722764387,20.767471084595],
+    "population_record": "Character.HomelessMan",
+    "appearance": "citizen__homeless_ma_homeless_ma_17",
+    "is_vehicle": false, "spawn_on_start": false,
+    "always_spawned": "true", "spawn_in_view": "default__true_"
+  }],
+  "ai_spots": [{
+    "ref": "#standing_spot", "sector": "always_loaded",
+    "position": [-2856.327293376668,-2719.007722764387,21.15910697937],
+    "yaw": 26.85, "snap_to_ground": true,
+    "workspot": "base\\workspots\\common\\ground\\generic__stand_ground__stand_around__07.workspot"
+  }]
+}

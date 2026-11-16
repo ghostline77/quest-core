@@ -23,8 +23,7 @@ struct Args {
 
 fn build(args: Args) -> Result<()> {
     ensure!(!args.out.exists(), "output directory must be new");
-    let source = PathBuf::from(env!("CARGO_MANIFEST_DIR"))
-        .join("../quest-builder/examples/native-workspots");
+    let source = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("examples/native-workspots");
     let load = |name: &str| -> Result<Value> {
         Ok(serde_json::from_slice(&fs::read(source.join(name))?)?)
     };

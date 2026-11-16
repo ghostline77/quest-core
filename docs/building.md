@@ -4,16 +4,16 @@
 
 You need a Rust toolchain supporting edition 2024 and a local Cyberpunk 2077 installation. Reflection metadata is bundled in `ghostline-red` and automatically overlaid with the selected game's metadata; no schema path is required. `--schema` is an optional advanced override.
 
-The Cargo dependencies currently use sibling checkouts:
+Clone Quest Core from the `ghostline77` GitHub organization:
 
-```text
-ghostline77/
-  quest-core/
-  quest-builder/
-  ghostline-red/
+```sh
+git clone https://github.com/ghostline77/quest-core.git
+cd quest-core
 ```
 
-Keep those checkouts at compatible revisions. Run the following commands from `quest-core`. Replace the example game and receipt paths with your own.
+Cargo fetches Quest Builder and ghostline-red from their repositories in the same organization, at the revisions pinned in `Cargo.toml` and `Cargo.lock`. Quest Builder is used as a library with its frontend build disabled, so no sibling checkouts or Node.js installation are required.
+
+Run the following commands from `quest-core`. Replace the example game and receipt paths with your own.
 
 ## Build
 

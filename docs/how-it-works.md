@@ -156,6 +156,7 @@ cross-platform loader, supplying the streaming block, journal and localization.
 The core does not need the PC
 ArchiveXL DLL, CET commands or REDscript to start.
 
-Building the package requires the sibling Quest Builder and ghostline-red
-libraries and an installed game. See [building and testing](building.md).
+Building the package requires Rust and an installed game. Cargo fetches the
+Quest Builder and ghostline-red libraries from the `ghostline77` GitHub
+organization. See [building and testing](building.md).
 For NPC activities and shared registry limitations, see [workspots](workspots.md).
