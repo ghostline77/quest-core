@@ -11,7 +11,7 @@ git clone https://github.com/ghostline77/quest-core.git
 cd quest-core
 ```
 
-Cargo fetches Quest Builder and ghostline-red from their repositories in the same organization, at the revisions pinned in `Cargo.toml` and `Cargo.lock`. Quest Builder is used as a library with its frontend build disabled, so no sibling checkouts or Node.js installation are required.
+Cargo fetches Quest Builder and ghostline-red from the `ghostline77` GitHub organization.
 
 Run the following commands from `quest-core`. Replace the example game and receipt paths with your own.
 
