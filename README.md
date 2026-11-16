@@ -63,3 +63,5 @@ reset that progress. Test graph updates and removal with separate saves.
 The packager checks its cross-platform resource allowlist. Local build checks
 do not establish PS5 compatibility; validation through mod.io and on the target
 platform remains separate.
+
+See [release validation](docs/release-validation.md) for candidate hashes and pending gameplay and platform checks.

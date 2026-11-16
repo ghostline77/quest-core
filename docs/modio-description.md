@@ -30,4 +30,4 @@ Keep a separate save before changing or removing quest mods. Follow each quest's
 
 ## For modders
 
-Visit the [GitHub repository](https://github.com/ghostline77/quest-core) for slot allocations, integration instructions and workspot support.
+Contact the maintainer through this listing to request a quest slot and the integration instructions. Include the name of your pack and any workspot registration it needs.
