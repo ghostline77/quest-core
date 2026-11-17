@@ -31,3 +31,5 @@ Keep a separate save before changing or removing quest mods. Follow each quest's
 ## For modders
 
 Contact the maintainer through this listing to request a quest slot and the integration instructions. Include the name of your pack and any workspot registration it needs.
+
+Once the maintainer confirms your slot, ship one wrapper in your own archive. For example, slot 2 uses `mod\ghostline_quest_core\slots\slot_002.questphase`. Connect its `In1` input to your quest's root. Return `Done` when a finite quest finishes, or keep a persistent controller running while it handles progression and replay. An empty slot returns `Vacant` and the core retries. Keep the allocated slot and owner ID stable across updates. List the required core version on your pack's mod.io page.
