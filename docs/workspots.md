@@ -18,17 +18,6 @@ NPC ownership and workspot placement are separate choices. A population spawner 
 
 A vendor can use either arrangement. A community-managed vendor needs registration for the stall activity assigned by that community. A quest can instead spawn a vendor and explicitly send it to a quest-owned stall workspot. Both can use a scene for dialogue and opening the shop. Being a vendor, being global or having dialogue does not inherently require community registration.
 
-## What the races use
-
-The Night City Street Series uses **population-owned NPCs and quest-owned world workspots**:
-
-- Population spawners own the drivers, passengers, crowd, announcer and Johnny.
-- The crowd and announcer use directly assigned standing workspots placed by the race package. Johnny leaves his standing workspot before mounting.
-- Drivers and passengers use vehicle seat assignments while racing.
-- Countdown and result scenes acquire the announcer or Johnny from their population spawners when needed for dialogue. These presentation scenes declare no scene-local workspots.
-
-The races therefore have placed world workspots, but **no community-registered workspots**. Their core registration receipt contains no workspot entries. Moving their NPC spawns or workspot placements requires rebuilding the race package, without rebuilding Quest Core.
-
 ## Quest-owned world activities
 
 The [Quest Builder example](https://github.com/ghostline77/quest-builder/tree/main/examples/native-workspots) contains ordinary quest, scene and world specifications. The `play_scene` stage activates the population spawner, waits for the NPC, plays the scene, then optionally deactivates the spawner after the scene releases its actor. The scene starts and stops the workspot through direct NodeRefs; no community entry name is needed.

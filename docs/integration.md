@@ -84,7 +84,7 @@ Include your allocated slot wrapper and your own gameplay resources. Install the
 
 The core package is named `zz_ghostline_quest_core`. Keep your archive and package-folder names alphabetically before that name. The current loading arrangement relies on the first loaded resource winning, so your wrapper must take priority over the core's empty version.
 
-Mods using community-registered workspots must also supply their generated registration receipt for the matching core build. Scene-local and directly assigned quest-owned workspots need no core workspot registrations. The races use the latter arrangement. See [workspot choices and examples](workspots.md).
+Mods using community-registered workspots must also supply their generated registration receipt for the matching core build. Scene-local and directly assigned quest-owned workspots need no core workspot registrations. See [workspot choices and examples](workspots.md).
 
 ## Saved state
 

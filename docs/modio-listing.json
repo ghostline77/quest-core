@@ -9,14 +9,11 @@
   "tags": "Choose appropriate existing tags in the publishing form; do not invent tag IDs.",
   "thumbnail": {
     "path": "docs/modio-cover.png",
-    "source": "Original gameplay screenshot from the Badlands workspot validation session."
+    "source": "Original Cyberpunk 2077 gameplay screenshot."
   },
   "upload": {
     "mode": "Cook a source file",
-    "source_zip": "builds/core/submission/zz_ghostline_quest_core-source.zip",
-    "submitted": false,
-    "approved": false,
-    "console_runtime_verified": false
+    "source_zip": "builds/core/submission/zz_ghostline_quest_core-source.zip"
   },
   "sources": [
     "https://mod.io/g/cyberpunk-2077/r/how-to-create-mods-for-cross-platform-mod-support",

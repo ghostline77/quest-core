@@ -48,8 +48,7 @@ Scene-local and directly assigned quest-owned workspots need no core registry
 update. Community-registered workspots use a shared startup registry; adding or
 moving those placements currently requires a matching core build.
 
-The race series uses population-owned NPCs and quest-owned world workspots,
-with no community workspot registrations. See
+See
 [workspot choices and examples](docs/workspots.md).
 
 ## Compatibility
@@ -63,5 +62,3 @@ reset that progress. Test graph updates and removal with separate saves.
 The packager checks its cross-platform resource allowlist. Local build checks
 do not establish PS5 compatibility; validation through mod.io and on the target
 platform remains separate.
-
-See [release validation](docs/release-validation.md) for candidate hashes and pending gameplay and platform checks.
